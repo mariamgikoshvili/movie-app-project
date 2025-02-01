@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Explorer</h1>
+        <nav>
+            <a href="list.html">Browse Movies</a>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h2>Welcome to Movie Explorer!</h2>
+        <p>Discover popular movies, search for your favorites, and explore details.</p>
+        
+        <label for="username">Enter your name:</label>
+        <input type="text" id="username" placeholder="Your name">
+        <button id="save-username">Save</button>
+        <p id="greeting"></p>
+        
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+        
+        <p><a href="list.html" class="btn">Start Browsing Movies</a></p>
+    </main>
+    <section class="favorites-section">
+        <h2>Your Favorite Movies</h2>
+        <div id="favorites-list" class="movie-cards">
+            <p>No favorite movies added yet.</p>
+        </div>
+    </section>
+    
+    
+    <script src="home.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>

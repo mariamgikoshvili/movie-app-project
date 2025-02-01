@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0d6d406638.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Movie Explorer</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="header_nav">
+                <ul class="header_ul">
+                    <li><a href="index.html" class="nav_a">Home</a></li>
+                    <li><a href="list.html" class="nav_a">Movie List</a></li>
+                </ul>
+            </nav>
+            <a href="index.html" class="header_logo_a">
+                <h2 class="header_logo1">Movie</h2>
+                <h2 class="header_logo2">Explorer</h2>
+            </a>
+            <section class="header_section">
+                <input type="text" id="search-bar" placeholder="Search for movies...">
+                <button id="search-button">Search</button>
+            </section>
+        </header>
+
+        <section class="movie-list-section">
+            <h2 class="section_header">Popular Movies</h2>
+            <div id="movies-list" class="movie-cards">
+            </div>
+            <div id="pagination">
+                <button id="prev-button" disabled>Previous</button>
+                <button id="next-button">Next</button>
+            </div>
+        </section>
+
+        <footer>
+            <a href="index.html" class="footer_logo_a">
+                <h2 class="footer_logo1">Movie</h2>
+                <h2 class="footer_logo2">Explorer</h2>
+            </a>
+        </footer>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="favorites.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
